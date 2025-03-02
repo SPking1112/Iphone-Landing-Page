@@ -1,0 +1,307 @@
+/* Imported Font  */
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald&family=Playwrite+HU:wght@100..400&family=Style+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Universal Selector  */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* World Element  */
+:root {
+  --bg-primary: white;
+  --bg-secondary: black;
+  --color: #666;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+/* Web  */
+.web {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Home Page  */
+.home {
+  min-height: 100vh;
+  padding: 10px;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Navigation Bar  */
+nav {
+  width: 100%;
+  height: 15vh;
+  background: var(--bg-secondary);
+  /* border: 5px solid gold; */
+  /* position: fixed; */
+  /* z-index: 9999; */
+}
+
+.home > header {
+  height: 15vh;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color);
+  /* transform: translateY(20vh); */
+}
+
+.home > header > h1 {
+  font-size: 50px;
+}
+
+.home > header > h3 {
+  font-size: 30px;
+}
+
+/* Home Main  */
+.home-main {
+  height: 75vh;
+  width: 90%;
+  /* background: gray; */
+}
+
+.home-main > video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+/* Home Page  closes*/
+
+/* Features  */
+.features {
+  width: 100%;
+  height: 70vh;
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-container{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    /* background: red; */
+    display: grid;
+  gap: 10px;
+  grid-template-areas:
+    " box1 box2 box3 box4 "
+    " box5 box6 box6 box7 "
+    " box8 box9 box10 box11 "
+    ;
+}
+
+.box {
+  border-radius: 20px;
+ 
+}
+
+.box1 {
+  grid-area: box1;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+  background: url(./a18.png);
+}
+
+.box2 {
+  grid-area: box2;
+  
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+}
+
+/* Features  */
+/* < */
+
+/* Features  closes*/
+
+/* Accessories  closes*/
+.accessories{
+  width: 100%;
+  height: 100vh;
+  background: yellow;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 
+  "card1 card2 card3"
+  "card4 card5 card6";
+}
+
+.a-card{
+  background: red;
+  border-radius:20px ;
+}
+
+.a-card1{
+  grid-area: card1;
+}
+
+.a-card2{
+  grid-area: card2;
+}
+
+.a-card3{
+  grid-area: card3;
+}
+
+.a-card4{
+  grid-area: card4;
+}
+ 
+.a-card5{
+  grid-area: card5;
+}
+
+.a-card6{
+  grid-area: card6;
+}
+
+/* Accessories  */
+
+/* Footer  */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #f5f5f7;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.column {
+  width: 30%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #666;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+/* Footer closes  */
+
+/* Responsive  */
+
+/* Home  */
+/* <600px */
+@media only screen and (max-width: 600px) {
+  .home > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 10px;
+  }
+
+  .home > header > h1 {
+    font-size: 30px;
+  }
+
+  .home > header > h3 {
+    font-size: 20px;
+  }
+}
