@@ -19,8 +19,21 @@
         <div class="home" id="home">
 
             <!-- Navigation Bar  -->
-            <nav>
-
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><i class="fa-brands fa-apple"></i></h1>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#abt-scroll">About</a></li>
+                    <li><a href="#Products">Product</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
             </nav>
             <!-- Navigation Bar  closes-->
 
@@ -30,7 +43,7 @@
             </header>
 
             <!-- Home Main  -->
-            <div class="home-main">
+            <div class="home-main" id="home-main">
                 <video src="./home-bg.mp4" autoplay muted loop></video>
             </div>
             <!-- Home Main  closes-->
@@ -60,17 +73,19 @@
                     <!-- <h1>5</h1> -->
                 </div>
                 <div class="box box6">
-                    <h1>23W </h1>
-                    <p>Fast Charging</p>
+                    <h2>23W  Fast Charging</h2>
                 </div>
                 <div class="box box7">
+                    <h1>26 hrs of video play back</h1>
                     <!-- <h1>7</h1> -->
                 </div>
                 <div class="box box8">
-                    <h1>8</h1>
+                    <h2>Stunning 15.40 cm (6.1″) OLED display footnote </h2>
+                    <!-- <h1>8</h1> -->
                 </div>
                 <div class="box box9">
-                    <h1>9</h1>
+                    <h2>48MP Fusion camera</h2>
+                    <!-- <h1>9</h1> -->
                 </div>
                 <!-- <div class="box box10"></div>
                 <div class="box box11"></div> -->
@@ -79,7 +94,7 @@
         </div>
 
         <!--------About------->
-        <div class="about" id="about">
+        <!-- <div class="about" id="about">
 
             <header>
                 <h1>About</h1>
@@ -125,7 +140,7 @@
                 <p>- Intelligent automation that predicts your next action before you even think about it.</p>
             </div>
 
-        </div>
+        </div> -->
         <!--------About closes------->
 
         <!-------About scroll------>
@@ -155,7 +170,7 @@
                     </header>
 
                     <footer>
-                        
+
                     </footer>
                 </div>
 
@@ -166,7 +181,7 @@
                     </header>
 
                     <footer>
-                        
+
                     </footer>
                 </div>
                 <div class="abt-scr-box abt-scr-box-4">
@@ -176,7 +191,7 @@
                     </header>
 
                     <footer>
-                        
+
                     </footer>
                 </div>
                 <div class="abt-scr-box abt-scr-box-5">
@@ -186,7 +201,7 @@
                     </header>
 
                     <footer>
-                        
+
                     </footer>
                 </div>
                 <div class="abt-scr-box abt-scr-box-6">
@@ -196,7 +211,7 @@
                     </header>
 
                     <footer>
-                        
+
                     </footer>
                 </div>
                 <!-- <div class="abt-scr-box abt-scr-box-7"></div>
@@ -207,8 +222,81 @@
         </div>
         <!-------About scroll closes------>
 
+        <!-------Products--------->
+
+        <header>
+            <h1>Apple Products</h1>
+        </header>
+
+        <div class="Products" id="Products">
+
+            <div class="pro-box pro-box1">
+
+                <header>
+                    <h1>Apple Air Pods</h1>
+                </header>
+
+                <video src="./Assest/airpods.mp4" autoplay muted loop></video>
+
+                <footer>
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">Learn More</button>
+                </footer>
+            </div>
+
+            <div class="pro-box pro-box2">
+
+                <header>
+                    <h1>Mac Mini</h1>
+                </header>
+
+                <video src="./Assest/mac-mini.mp4" autoplay muted loop></video>
+
+                <footer>
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">Learn More</button>
+                </footer>
+            </div>
+
+            <div class="pro-box pro-box3">
+
+                <header>
+                    <h1>Apple Watch</h1>
+                </header>
+
+                <video src="./Assest/watch.mp4" autoplay muted loop></video>
+
+                <footer>
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">Learn More</button>
+                </footer>
+            </div>
+
+            <div class="pro-box pro-box4">
+
+                <header>
+                    <h1>Slow Motion</h1>
+                </header>
+
+                <video src="./Assest/slow-mo.mp4" autoplay muted loop></video>
+
+                <footer>
+                    <button class="btn">Buy Now</button>
+                    <button class="btn">Learn More</button>
+                </footer>
+            </div>
+
+            <!-- <div class="pro-box pro-box5"></div>
+            <div class="pro-box pro-box6"></div> -->
+
+        </div>
+        <!-------Product closes--------->
+
+
+
+
         <!-- Footer  -->
-        <footer class="footer">
+        <footer class="footer" id="Contact">
             <div class="container">
                 <p class="disclaimer">*Some features may not be available in all regions.</p>
                 <hr>
@@ -245,6 +333,8 @@
         </footer>
         <!-- Footer closes  -->
     </div>
+
+    <script src="./function.js"></script>
 
 </body>
 
