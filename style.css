@@ -155,7 +155,7 @@
   padding: 20px;
   /* background: red; */
   display: grid;
-  /* gap: 10px; */
+  gap: 10px;
   grid-template-areas:
     "box3 box3 box1 box2"
     "box3 box3 box4 box5"
@@ -187,16 +187,16 @@
 
 .box1 {
   grid-area: box1;
-  background: url(./a18-1.png);
+  background: url(./Assest/apple-a18.jpeg);
   background-position: center;
   background-size: cover;
 }
 
 .box2 {
   grid-area: box2;
-  background: url(./logo.png);
+  background: url(./Assest/apple-logo-1.webp);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -213,7 +213,7 @@
 
 .box4 {
   grid-area: box4;
-  background: url(./charger.jpg);
+  background: url(./Assest/charger.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -221,9 +221,9 @@
 
 .box5 {
   grid-area: box5;
-  background: url(./ai-icon.png);
+  background: url(./Assest/apple-intelligence.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
